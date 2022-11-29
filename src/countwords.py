@@ -1,6 +1,6 @@
 """Generates a wordcounts from books.
 
-Usage: src/wordcount.py <input_file> <output_file>
+Usage: src/countwords.py <input_file> <output_file>
 
 Options:
 <input_file>     Path (including filename) to data file
