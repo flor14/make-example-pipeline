@@ -7,7 +7,7 @@
 # takes no arguments.
 
 # example usage:
-# bash run_all.sh
+# bash runall.sh
 
 # count the words
 python src/countwords.py data/isles.txt results/isles.dat
