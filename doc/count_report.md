@@ -3,10 +3,10 @@ Word count report
 
 ## The most frequent words in the 4 novels we studied:
 
-Isles: ![alt tag](../results/figure/isles.png)
+Isles: ![alt tag](../figures/isles.png)
 
-Abyss: ![alt tag](../results/figure/abyss.png)
+Abyss: ![alt tag](../figures/abyss.png)
 
-Last: ![alt tag](../results/figure/last.png)
+Last: ![alt tag](../figures/last.png)
 
-Sierra: ![alt tag](../results/figure/sierra.png)
+Sierra: ![alt tag](../figures/sierra.png)

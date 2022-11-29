@@ -135,4 +135,4 @@ def word_count(input_file, output_file, min_length=1):
     save_word_counts(output_file, percentage_counts)
 
 if __name__ == '__main__':
-    main(opt["<input_file>"], opt["<output_file>"])
+    main(opt["<input_file>"], opt["<output_file>"]) 

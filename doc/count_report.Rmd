@@ -11,13 +11,13 @@ knitr::opts_knit$set(root.dir = here::here())
 ## The most frequent words in the 4 novels we studied:
 
 Isles:
-![alt tag](../results/figure/isles.png)
+![alt tag](../figures/isles.png)
 
 Abyss:
-![alt tag](../results/figure/abyss.png)
+![alt tag](../figures/abyss.png)
 
 Last:
-![alt tag](../results/figure/last.png)
+![alt tag](../figures/last.png)
 
 Sierra:
-![alt tag](../results/figure/sierra.png)
+![alt tag](../figures/sierra.png)

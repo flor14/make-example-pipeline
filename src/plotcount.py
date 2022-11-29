@@ -18,7 +18,7 @@ def main(input_file, output_file):
     data.rename(columns = {0:'word', 1:'count', 2:'frequency'}, inplace = True)
     data.sort_values(by = 'count')
     word_count_plot = data.iloc[:10,:2].plot.bar(x = 'word', y = 'count',
-                                             color = 'orange',
+                                             color = 'yellow',
                                              figsize = (5, 2),
                                             rot = 0)
     plt.savefig(output_file)
