@@ -12,4 +12,4 @@ RUN pip install docopt-ng==0.8.*
 
 RUN apt-get install r-base r-base-dev -y
 
-RUN Rscript -e "install.packages('rmarkdown', 'here')"
+RUN Rscript -e "install.packages(c('rmarkdown', 'here'))"
