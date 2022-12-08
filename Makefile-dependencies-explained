@@ -1,0 +1,35 @@
+# Makefile
+# Author: Florencia D'Andrea
+# Date: 2022-11-28
+
+all : A
+
+# count the words
+I : data/isles.txt src/countwords.py
+	python src/countwords.py data/isles.txt results/isles.dat
+
+H : data/abyss.txt src/countwords.py
+	python src/countwords.py data/abyss.txt results/abyss.dat
+
+G : data/last.txt src/countwords.py
+	python src/countwords.py data/last.txt results/last.dat
+
+F : data/sierra.txt src/countwords.py
+	python src/countwords.py data/sierra.txt results/sierra.dat
+
+# create the plots
+E : I src/plotcount.py
+	python src/plotcount.py results/isles.dat figures/isles.png
+    
+D : H src/plotcount.py     
+	python src/plotcount.py results/abyss.dat figures/abyss.png
+  
+C : G src/plotcount.py 
+	python src/plotcount.py results/last.dat figures/last.png
+  
+B : F src/plotcount.py 
+	python src/plotcount.py results/sierra.dat figures/sierra.png
+
+# write the report
+A : B C D E
+	Rscript -e "rmarkdown::render('doc/count_report.Rmd')"

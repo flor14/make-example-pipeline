@@ -2,7 +2,7 @@
 # Author: Florencia D'Andrea
 # Date: 2022-11-28
 
-# all : doc/count_report.html 
+all : doc/count_report.html 
 
 # count the words
 results/isles.dat : data/isles.txt src/countwords.py
@@ -35,10 +35,7 @@ doc/count_report.html : figures/isles.png figures/abyss.png figures/sierra.png f
 	Rscript -e "rmarkdown::render('doc/count_report.Rmd')"
 	
 
-# clean :
-#	rm -f results/*.dat
-#	rm -f figures/*.png
-#	rm -f doc/*.html
-	
-	
-	
+clean :
+	rm -f results/*.dat
+	rm -f figures/*.png
+	rm -f doc/*.html
