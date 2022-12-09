@@ -6,7 +6,7 @@ FROM continuumio/miniconda3:4.12.0
 RUN apt update && apt install -y make
 
 # Override miniconda python installation
-RUN conda install python=3.10 matplotlib=3.5 pandas=1.4 pandoc=2
+RUN conda install -y python=3.10 matplotlib=3.5 pandas=1.4 pandoc=2
 
 RUN pip install docopt-ng==0.8.*
 
