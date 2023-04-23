@@ -1,4 +1,4 @@
-## Run Data Analysis pipeline with a Shell script or Makefile
+## Run a Data Analysis pipeline with a Shell script or Makefile
 adapted from [Software Carpentry](http://software-carpentry.org/)
 
 This example data analysis project analyzes the word count for all words in 4
